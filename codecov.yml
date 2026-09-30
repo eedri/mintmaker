@@ -1,6 +1,5 @@
 codecov:
   require_ci_to_pass: true
-
 coverage:
   status:
     project:
@@ -10,30 +9,26 @@ coverage:
         informational: true
     patch:
       default:
-        target: 80%
-        informational: true
-
+        target: 85%
 ignore:
-  - "api/v1alpha1/zz_generated.deepcopy.go"
-  - "api/v1alpha1/dependencyupdatecheck_types.go"
-  - "**/mock_*.go"
-  - "cmd/"
-  - ".github/**"
-  - "**/*.yml"
-  - "**/*.yaml"
-  - "**/*.toml"
-  - "**/*.sh"
-  - "**/*.md"
-  - ".agents/**"
-  - ".claude/**"
-  - ".cursor/**"
-  - "skills/**"
-  - "docs/**"
-
+- api/v1alpha1/zz_generated.deepcopy.go
+- api/v1alpha1/dependencyupdatecheck_types.go
+- '**/mock_*.go'
+- cmd/
+- .github/**
+- '**/*.yml'
+- '**/*.yaml'
+- '**/*.toml'
+- '**/*.sh'
+- '**/*.md'
+- .agents/**
+- .claude/**
+- .cursor/**
+- skills/**
+- docs/**
 flags:
   unit-tests:
     carryforward: true
-
 comment:
-  layout: "reach,diff,flags,files,footer"
+  layout: reach,diff,flags,files,footer
   require_changes: true
